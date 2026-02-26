@@ -44,6 +44,7 @@ app.get("/listings/:id",async(req,res)=>{
 app.post("/listings",async (req, res) => {
      const newListing  = new Listing(req.body.listing);
      await newlisting.save;
+     
 })
 
 
